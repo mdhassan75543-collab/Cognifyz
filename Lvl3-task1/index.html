@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Image Gallery | Level 3 Task 1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Photo<span>Gallery</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#slideshow">Slideshow</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            LEVEL 3 • TASK 1
+        </p>
+
+        <h1>
+            Explore Our
+            <span>Image Gallery</span>
+        </h1>
+
+        <p>
+            A responsive image gallery with clickable
+            images and an automatic slideshow.
+        </p>
+
+        <a href="#gallery" class="hero-button">
+            Explore Gallery
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery" class="gallery-section">
+
+    <div class="section-heading">
+
+        <p>IMAGE GALLERY</p>
+
+        <h2>
+            Click Any Image
+        </h2>
+
+        <span>
+            Click an image to view it in full screen.
+        </span>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+
+            <img
+                src="img1.jpg"
+                alt="Gallery Image 1"
+                onclick="openLightbox(0)"
+            >
+
+            <div class="image-title">
+                Nature
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="img2.jpg"
+                alt="Gallery Image 2"
+                onclick="openLightbox(1)"
+            >
+
+            <div class="image-title">
+                Mountains
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="img3.jpg"
+                alt="Gallery Image 3"
+                onclick="openLightbox(2)"
+            >
+
+            <div class="image-title">
+                Forest
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="img4.avif"
+                alt="Gallery Image 4"
+                onclick="openLightbox(3)"
+            >
+
+            <div class="image-title">
+                Ocean
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="img5.avif"
+                alt="Gallery Image 5"
+                onclick="openLightbox(4)"
+            >
+
+            <div class="image-title">
+                Sunset
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="img6.webp"
+                alt="Gallery Image 6"
+                onclick="openLightbox(5)"
+            >
+
+            <div class="image-title">
+                Travel
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SLIDESHOW
+========================= -->
+
+<section id="slideshow" class="slideshow-section">
+
+    <div class="section-heading light">
+
+        <p>AUTOMATIC SLIDESHOW</p>
+
+        <h2>
+            Enjoy the Collection
+        </h2>
+
+        <span>
+            Images automatically change every few seconds.
+        </span>
+
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <img
+            id="slideshowImage"
+            src="images/image1.jpg"
+            alt="Automatic Slideshow"
+        >
+
+
+        <button
+            class="slide-button previous"
+            onclick="previousSlide()"
+        >
+            ❮
+        </button>
+
+
+        <button
+            class="slide-button next"
+            onclick="nextSlide()"
+        >
+            ❯
+        </button>
+
+
+        <div class="slide-counter">
+
+            <span id="slideNumber">
+                1
+            </span>
+
+            /
+            
+            <span>
+                6
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="slideshow-controls">
+
+        <button onclick="previousSlide()">
+            Previous
+        </button>
+
+        <button
+            id="playButton"
+            onclick="toggleSlideshow()"
+        >
+            Pause
+        </button>
+
+        <button onclick="nextSlide()">
+            Next
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div
+    id="lightbox"
+    class="lightbox"
+>
+
+    <button
+        class="close-button"
+        onclick="closeLightbox()"
+    >
+        ×
+    </button>
+
+
+    <button
+        class="lightbox-arrow left"
+        onclick="lightboxPrevious()"
+    >
+        ❮
+    </button>
+
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Full Size Image"
+    >
+
+
+    <button
+        class="lightbox-arrow right"
+        onclick="lightboxNext()"
+    >
+        ❯
+    </button>
+
+
+    <div
+        id="lightboxCounter"
+        class="lightbox-counter"
+    >
+        1 / 6
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>
+            Photo<span>Gallery</span>
+        </h3>
+
+        <p>
+            Cognifyz Technologies Internship
+        </p>
+
+        <p>
+            Level 3 — Task 1
+        </p>
+
+        <p>
+            © 2026 All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

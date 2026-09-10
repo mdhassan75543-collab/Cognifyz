@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Cognifyz Level 2 Task 2 - Responsive Web Design"
+    >
+
+    <title>ResponsiveX | Cognifyz Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <!-- Logo -->
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">
+                    R
+                </span>
+
+                <span>
+                    Responsive<span class="logo-highlight">X</span>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="navigation" id="navigation">
+
+                <a href="#home">Home</a>
+
+                <a href="#features">Features</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+
+            <!-- Hamburger -->
+
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text">
+
+                    <span class="badge">
+                        RESPONSIVE WEB DESIGN
+                    </span>
+
+
+                    <h1>
+                        One website.
+                        <span>Every screen.</span>
+                    </h1>
+
+
+                    <p>
+                        A responsive webpage automatically adapts
+                        its layout, typography and components to
+                        different screen sizes using CSS media
+                        queries.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#features"
+                            class="primary-button"
+                        >
+                            Explore Features
+                        </a>
+
+
+                        <a
+                            href="#about"
+                            class="secondary-button"
+                        >
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Responsive Preview -->
+
+                <div class="responsive-preview">
+
+                    <div class="preview-window">
+
+                        <div class="preview-top">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="preview-content">
+
+                            <div class="preview-header">
+                                RESPONSIVE UI
+                            </div>
+
+
+                            <div class="preview-grid">
+
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+
+                            </div>
+
+
+                            <div class="preview-lines">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FEATURES
+        ====================================== -->
+
+        <section id="features" class="features">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span>
+                        RESPONSIVE FEATURES
+                    </span>
+
+                    <h2>
+                        Designed for every device
+                    </h2>
+
+                    <p>
+                        The layout changes automatically depending
+                        on the available screen width.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+
+                    <!-- Feature 1 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ↔
+                        </div>
+
+                        <h3>
+                            Flexible Layout
+                        </h3>
+
+                        <p>
+                            Containers and sections resize smoothly
+                            to fit desktop, tablet and mobile
+                            screens.
+                        </p>
+
+                        <span class="feature-number">
+                            01
+                        </span>
+
+                    </article>
+
+
+                    <!-- Feature 2 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            Aa
+                        </div>
+
+                        <h3>
+                            Responsive Typography
+                        </h3>
+
+                        <p>
+                            Font sizes and spacing adjust at smaller
+                            breakpoints for better readability.
+                        </p>
+
+                        <span class="feature-number">
+                            02
+                        </span>
+
+                    </article>
+
+
+                    <!-- Feature 3 -->
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ☰
+                        </div>
+
+                        <h3>
+                            Mobile Navigation
+                        </h3>
+
+                        <p>
+                            The desktop navigation transforms into
+                            a hamburger menu on smaller screens.
+                        </p>
+
+                        <span class="feature-number">
+                            03
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BREAKPOINT SECTION
+        ====================================== -->
+
+        <section id="about" class="breakpoints">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span>
+                        CSS MEDIA QUERIES
+                    </span>
+
+                    <h2>
+                        Three responsive breakpoints
+                    </h2>
+
+                    <p>
+                        This project uses CSS media queries to
+                        change the layout at different screen widths.
+                    </p>
+
+                </div>
+
+
+                <div class="breakpoint-grid">
+
+
+                    <div class="breakpoint-card">
+
+                        <span class="device-icon">
+                            🖥️
+                        </span>
+
+                        <h3>
+                            Desktop
+                        </h3>
+
+                        <strong>
+                            901px+
+                        </strong>
+
+                        <p>
+                            Multi-column layout with full navigation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="breakpoint-card">
+
+                        <span class="device-icon">
+                            💻
+                        </span>
+
+                        <h3>
+                            Tablet
+                        </h3>
+
+                        <strong>
+                            601px – 900px
+                        </strong>
+
+                        <p>
+                            Columns become smaller and spacing is
+                            reduced.
+                        </p>
+
+                    </div>
+
+
+                    <div class="breakpoint-card">
+
+                        <span class="device-icon">
+                            📱
+                        </span>
+
+                        <h3>
+                            Mobile
+                        </h3>
+
+                        <strong>
+                            600px and below
+                        </strong>
+
+                        <p>
+                            Single-column layout with hamburger
+                            navigation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+        <section id="contact" class="contact">
+
+            <div class="container contact-box">
+
+
+                <div>
+
+                    <span class="section-label">
+                        RESPONSIVE DESIGN
+                    </span>
+
+                    <h2>
+                        Resize your browser
+                        and see the magic.
+                    </h2>
+
+                    <p>
+                        Try opening this webpage on a desktop,
+                        tablet or mobile device. The layout will
+                        automatically adapt to the available space.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#home"
+                    class="primary-button"
+                >
+                    Back to Top ↑
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 ResponsiveX • Cognifyz Technologies
+                Web Development Internship
+            </p>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#features">Features</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
