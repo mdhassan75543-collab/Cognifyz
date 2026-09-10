@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cognifyz Web Development Internship - Level 1 Task 1"
+    >
+
+    <title>Web Development | Cognifyz Task 1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>Web<span class="logo-highlight">Craft</span></span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="badge">
+                        COGNIFYZ • WEB DEVELOPMENT
+                    </span>
+
+                    <h1>
+                        Build the Web.
+                        <span>Create the Future.</span>
+                    </h1>
+
+                    <p>
+                        Welcome to my web development project. This webpage
+                        demonstrates the fundamentals of HTML and CSS through
+                        a clean, responsive and modern user interface.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#about" class="primary-btn">
+                            Explore Project
+                        </a>
+
+                        <a href="#contact" class="secondary-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="image-card">
+
+                        <div class="code-window">
+
+                            <div class="window-header">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="code-content">
+
+                                <p>
+                                    <span class="purple">&lt;html&gt;</span>
+                                </p>
+
+                                <p class="indent">
+                                    <span class="blue">&lt;h1&gt;</span>
+                                </p>
+
+                                <p class="double-indent">
+                                    Build Something Great
+                                </p>
+
+                                <p class="indent">
+                                    <span class="blue">&lt;/h1&gt;</span>
+                                </p>
+
+                                <p>
+                                    <span class="purple">&lt;/html&gt;</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <img
+                            src="download.svg"
+                            alt="Web development illustration"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        ABOUT THE PROJECT
+                    </span>
+
+                    <h2>
+                        Learning the fundamentals
+                    </h2>
+
+                    <p>
+                        This project focuses on the core building blocks
+                        of modern websites.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card-icon html-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            HTML provides the structure of a webpage using
+                            elements such as headings, paragraphs, links,
+                            images and forms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon css-icon">
+                            #
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            CSS controls the appearance of the webpage,
+                            including colors, spacing, typography, layouts
+                            and responsive design.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon responsive-icon">
+                            ↗
+                        </div>
+
+                        <h3>Responsive Design</h3>
+
+                        <p>
+                            Responsive design allows websites to adapt
+                            smoothly to desktops, tablets and mobile devices.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT / FORM SECTION ================= -->
+
+        <section id="contact" class="contact">
+
+            <div class="container contact-wrapper">
+
+                <div class="contact-info">
+
+                    <span class="section-label">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Let's build something together.
+                    </h2>
+
+                    <p>
+                        Have a question or want to connect?
+                        Enter your email and submit the form.
+                    </p>
+
+                    <div class="contact-detail">
+
+                        <div class="detail-icon">
+                            @
+                        </div>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@webcraft.dev</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-container">
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button type="submit" class="submit-btn">
+                            Submit
+                            <span>→</span>
+                        </button>
+
+
+                        <p id="formMessage" class="form-message"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 WebCraft. Created for Cognifyz Technologies
+                Web Development Internship.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript only for form interaction -->
+    <script>
+
+        const form = document.getElementById("contactForm");
+        const message = document.getElementById("formMessage");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            message.textContent =
+                "Thank you! Your email has been submitted successfully.";
+
+            form.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
